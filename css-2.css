@@ -102,55 +102,69 @@ li {
 	flex-direction: row;
 	justify-content: space-between;
 	width: 100%;
-	height: 1.4rem;
 }
 .role {
 	text-align: center;
-	width: 1rem;
-	height: 2rem;
+	width: 30%;
 	cursor: pointer;
+
 }
-.role:hover .picture { display:block }
+.role:hover .pic { 
+	visibility:visible;
+}
 .role-explain {
-	width: 80%;
-	height: 40%;
-	margin: 0 auto;
-	border: .04rem solid #fff;	
+	margin: .2rem auto 0.1rem;	
+	border: .01rem solid #fff;
 }
 .role-top {
-	width: 100%;
-	height: 75%;
+	padding: 25% 0;
 	background-color: #f5c97b;
 	font-size: .18rem;
-	line-height: .6rem;
+	line-height: 20%;
 	text-align: center;
 	color: #565656;
-	letter-spacing: .02rem;
 }
 .role-bottom {
-	width: 100%;
-	height: 25%;
+	padding: 10%;
 	background-color: #83b09a;
 	font-size: .14rem;
+	line-height: 50%;
 	text-align: center;
 	color: #fff;
 }
-.picture {
-	display: none;
+.pic {
+	visibility:hidden;
 	width: 100%;
-	height: .21rem;
-	margin-top:.1rem;
-	background: url(images/2-e.png) no-repeat center center;
-	background-size: .88rem .21rem ;
+	height: 18%;	
+}
+.pic div {
+	display: inline-block;
+	width: 20%;
+	padding: 10%;
+	margin: 0 0.5%;
+	background: url("images/img.png") no-repeat ;
+	background-size: 200%;
+}
+.pic :first-child {
+	background-position: 0 0;
+}
+.pic :nth-child(2) {
+	background-position: 100% 0;
+}
+.pic :nth-child(3) {
+	background-position: 0 100%;
+}
+.pic :last-child {
+	background-position: 100% 100%;
 }
 .footer {
 	position: fixed;
-	bottom: 0;
 	left: 0;
 	right: 0;
+	bottom: 0;
 	width: 100%;
 	height: 1rem;
-	line-height: .5rem;
+	line-height: 1rem;
 	background-color: #29bde0;
 	text-align: center;
 }
